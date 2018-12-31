@@ -12,7 +12,7 @@ class App extends Component {
 
         super()
 
-        // set state variables to track user & bot messages
+        // initialize state variables to track user & bot messages
         this.state = {
 
             // current user input - should update on any change to input
@@ -31,10 +31,12 @@ class App extends Component {
 
     }
 
+    // function to update user input on component state
     updateUserInput(event) {
         this.setState({ userInput: event.target.value })
     }
 
+    // function that sends an API request to the server with a message, server responds with bot's reply which is then set on state of component
     getBotReply(context) {
 
         axios.post(`${BASE_URL}/api/postmessage`, { user: 'toren', message: context.state.userInput }).then(response => {
