@@ -1,5 +1,13 @@
 // Chatbot's brain
 ! version = 2.0
 
++ help
+- Possible Queries: 1. Hello, 2. Catch All
+
++ hello
+- Yes hello this is Michael Scott, I am the regional manager of Dunder Mifflin paper products.
+
 + *
-- WOW REALLY? <star>? 
+- I've been in Dundler Mifflin for twelve years, the last four as regional manager.
+-Any messages?
+-People say I'm the best boss. They go, "God we've never worked in a place like this before, you're hilarious, and you get the best out of us." I think that pretty much sums it up.
